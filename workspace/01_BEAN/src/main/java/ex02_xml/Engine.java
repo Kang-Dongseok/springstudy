@@ -1,17 +1,17 @@
 package ex02_xml;
 
 public class Engine {
-	
+
 	// field(property)
 	private String type;  // 가솔린, 디젤
 	private int cc;  // 배기량
 	private int hp;  // 마력
 	private double efficiency;  // 연비
 	
+	// constructor
 	public Engine() {
 		
 	}
-
 	public Engine(String type, int cc, int hp, double efficiency) {
 		super();
 		this.type = type;
@@ -19,7 +19,8 @@ public class Engine {
 		this.hp = hp;
 		this.efficiency = efficiency;
 	}
-
+	
+	// method
 	public void info() {
 		System.out.println("엔진타입: " + type);
 		System.out.println("배기량: " + cc + "cc");

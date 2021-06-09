@@ -28,7 +28,7 @@ public class EngineerCalculator {
 		calculator.subtract(num1, num2);
 	}
 	public void multiply() {
-		calculator.multiply(num1, num2); 
+		calculator.multiply(num1, num2);
 	}
 	public void divide() {
 		calculator.divide(num1, num2);

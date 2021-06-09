@@ -5,7 +5,9 @@ public class Calculator {
 	// field (property)
 	
 	// constructor
-	public Calculator() {}
+	public Calculator() {
+		
+	}
 	
 	// method
 	public void add(int a, int b) {
@@ -20,4 +22,5 @@ public class Calculator {
 	public void divide(int a, int b) {
 		System.out.println(a + "/" + b + "=" + ((double)a / b));
 	}
+	
 }

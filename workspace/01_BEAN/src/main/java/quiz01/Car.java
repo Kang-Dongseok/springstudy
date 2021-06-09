@@ -13,7 +13,7 @@ public class Car {
 	
 	public void info() {
 		System.out.println("자동차 모델: " + model);
-		System.out.println("자동차 가격: " + price);
+		System.out.println("자동차 가격: " + price + "만원");
 	}
-	
+
 }

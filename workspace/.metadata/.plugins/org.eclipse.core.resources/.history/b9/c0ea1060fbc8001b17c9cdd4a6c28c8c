@@ -1,0 +1,41 @@
+package quiz03;
+
+import java.util.List;
+
+public class Exam {
+
+	private List<Integer> scores;  // 5개의 점수
+	private double average;  // 평균
+	private char grade;  // A ~ F
+	
+	public Exam() {}
+	public Exam(List<Integer> scores, double average, char grade) {
+		super();
+		this.scores = scores;
+		this.average = average;
+		this.grade = grade;
+	}
+	public void info() {
+		
+	}
+	public List<Integer> getScores() {
+		return scores;
+	}
+	public void setScores(List<Integer> scores) {
+		this.scores = scores;
+	}
+	public double getAverage() {
+		return average;
+	}
+	public void setAverage(double average) {
+		this.average = average;
+	}
+	public char getGrade() {
+		return grade;
+	}
+	public void setGrade(char grade) {
+		this.grade = grade;
+	}
+	
+	
+}

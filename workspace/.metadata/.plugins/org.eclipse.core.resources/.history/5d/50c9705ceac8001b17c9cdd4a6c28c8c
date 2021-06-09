@@ -1,0 +1,20 @@
+package quiz02;
+
+public class MultiplicationTable {
+
+	// field(property)
+	private int startDan;
+	private int endDan;
+	private int startNum;
+	private int endNum;
+	private Calculator calculator;
+	
+	public void execute() {
+		for(int i = startDan; i <= endDan; i++) {
+			for(int j = startNum; j <= endNum; j++) {
+				System.out.println(i + "x" + j + "=" + calculator.mutiply(i, j));
+			}
+		}
+	}
+	
+}

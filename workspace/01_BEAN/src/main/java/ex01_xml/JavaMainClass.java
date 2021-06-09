@@ -3,7 +3,7 @@ package ex01_xml;
 public class JavaMainClass {
 
 	public static void main(String[] args) {
-
+		
 		// 개발자가 직접 new를 이용해서 객체(Bean)를 생성한다.
 		
 		// Calculator는 field가 없어서 객체에 저장할 데이터가 없다.
@@ -31,8 +31,6 @@ public class JavaMainClass {
 		engineerCalculator2.subtract();
 		engineerCalculator2.multiply();
 		engineerCalculator2.divide();
-		
-		
 		
 	}
 

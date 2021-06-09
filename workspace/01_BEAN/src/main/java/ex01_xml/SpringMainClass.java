@@ -20,7 +20,7 @@ public class SpringMainClass {
 		
 		// 기존 : 개발자가 직접 Bean을 생성한다.
 		// 스프링 : 스프링이 미리 Bean을 생성해 둔다.
-		// IoC : Inversion of Control
+		// IoC : Inversion of Control, 제어의 역전
 		
 		// <bean id="engineerCalculator1" class="ex01_xml.EngineerCalculator">
 		EngineerCalculator e1 = ctx.getBean("engineerCalculator1", EngineerCalculator.class);
@@ -37,5 +37,7 @@ public class SpringMainClass {
 		e2.divide();
 		
 		ctx.close();
+
 	}
+
 }

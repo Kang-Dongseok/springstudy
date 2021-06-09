@@ -12,7 +12,7 @@ public class SpringMainClass {
 		
 		Car myCar = ctx.getBean("car", Car.class);
 		myCar.info();
-		
+	
 		ctx.close();
 
 	}
