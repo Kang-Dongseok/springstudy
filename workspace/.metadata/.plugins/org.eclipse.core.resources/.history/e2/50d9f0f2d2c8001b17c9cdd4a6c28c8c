@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="p" class="quiz01.Person">
+		<property name="name">
+			<value>브레드</value>
+		</property>
+		<property name="car">
+			<ref bean="car" />
+		</property>
+	</bean>
+	
+	<bean id="car" class="quiz01.Car">
+		<constructor-arg>
+			<value>SM5</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>3000</value>
+		</constructor-arg>
+	</bean>
+
+</beans>

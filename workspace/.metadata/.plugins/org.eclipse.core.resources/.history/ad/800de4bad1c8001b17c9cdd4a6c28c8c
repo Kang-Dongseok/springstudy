@@ -1,0 +1,9 @@
+package quiz01;
+
+public class JavaMainClass {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}
