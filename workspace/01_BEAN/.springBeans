@@ -13,6 +13,13 @@
 		<config>src/main/resources/quiz02.xml</config>
 		<config>src/main/resources/app-context3-1.xml</config>
 		<config>src/main/resources/quiz03.xml</config>
+		<config>src/main/resources/app-context4.xml</config>
+		<config>src/main/resources/app-context7.xml</config>
+		<config>src/main/resources/app-context8.xml</config>
+		<config>src/main/resources/quiz04.xml</config>
+		<config>src/main/resources/quiz05.xml</config>
+		<config>src/main/resources/app-context9.xml</config>
+		<config>src/main/resources/app-context10.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
