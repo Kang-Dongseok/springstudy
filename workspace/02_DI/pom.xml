@@ -36,6 +36,14 @@
 		    <version>1</version>
 		</dependency>
 		
+		<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+		<!-- @Resource를 위해서 추가한 디펜던시 -->
+		<dependency>
+		    <groupId>javax.annotation</groupId>
+		    <artifactId>javax.annotation-api</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
+		
 	
 		<!-- Spring and Transactions -->
 		<dependency>  <!-- dependency 하나 당 jar 하나 -->
