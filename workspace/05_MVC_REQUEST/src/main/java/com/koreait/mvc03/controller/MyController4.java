@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -79,6 +80,7 @@ public class MyController4 {
 	
 	// field
 	@Autowired
+	@Qualifier("p1")  // <qualifier value="p1" />
 	private Person person1;
 	
 	@RequestMapping("f3/v03")
@@ -91,9 +93,10 @@ public class MyController4 {
 	}
 	
 	@Autowired
+	@Qualifier("p2")
 	private Person person2;
 	
-	@RequestMapping
+	@RequestMapping("f3/v04")
 	public String d(Model model) {
 		
 		model.addAttribute("person2", person2);
@@ -102,13 +105,4 @@ public class MyController4 {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 }
- 
