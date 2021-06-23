@@ -9,11 +9,11 @@
 <body>
 
 	<h1>게시글 작성 화면</h1>
-
+	
 	<form action="insertBoard.do"
 		  method="post"
 		  enctype="multipart/form-data">
-		  
+	
 		작성자<br>
 		<input type="text" name="writer"><br><br>
 		
@@ -24,10 +24,10 @@
 		<input type="text" name="content"><br><br>
 		
 		첨부<br>
-		<input type="file" name="files" multiple>  <!-- multiple : 다중 첨부 가능 -->
-		
+		<input type="file" name="files" multiple><br><br>  <!-- multiple : 다중 첨부 가능 -->
+	
 		<button>저장하기</button>
-		
+	
 	</form>
 </body>
 </html>
