@@ -13,6 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.ui.Model;
 
+import com.koreait.member.util.SecurityUtils;
+
 public class EmailAuthCommand {
 
 	@Autowired
@@ -24,20 +26,16 @@ public class EmailAuthCommand {
 		HttpServletRequest request = (HttpServletRequest)map.get("request");
 		
 		String email = request.getParameter("email");  // 인증번호를 받는 사람 이메일
-		
+		String authCode = null;
 		// MimeMessage 클래스
 		// 이메일을 작성하는 클래스
 		MimeMessage message = mailSender.createMimeMessage();
-		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!$?&";
-		String authCode = "";
 		try {
 			message.setHeader("Content-Type", "text/plain; charset=utf-8");
 			message.setFrom(new InternetAddress("forspringlec@gmail.com", "관리자"));  // 보내는 사람
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(email));  // 받는 사람
 			message.setSubject("인증 요청 메일입니다.");
-			for (int i = 0; i < 6; i ++) {
-				authCode += chars.charAt((int)(Math.random() * chars.length()));
-			}
+			authCode = SecurityUtils.getAuthCode(6);  // 6자리 인증코드
 			message.setText("인증번호는 " + authCode + "입니다.");
 			
 		} catch (Exception e) {
