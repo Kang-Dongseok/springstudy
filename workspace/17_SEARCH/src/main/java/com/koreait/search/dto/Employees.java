@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Employees {
 
-	private int empolyeeId;  // column : employee_id
+	private int employeeId;  // column : employee_id
 	private String firstName;
 	private String lastName;
 	private String email;
