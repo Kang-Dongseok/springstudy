@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.koreait.mypage.dao.MemberDAO">
+
+	<insert id="insertMember">
+		INSERT INTO MEMBER
+		VALUES (MEMBER_SEQ.NEXTVAL, #{id}, #{pw}, #{name}, #{tel}, #{email}, #{address}, SYSDATE, 1)
+	</insert>
+	
+	<select id="selectOneMember" resultType="com.koreait.mypage.dto.MemberDTO">
+		SELECT NO, ID, PW, NAME, TEL, EMAIL, ADDRESS, REGDATE, STATUS
+		  FROM MEMBER
+		 WHERE ID = #{id}
+		   AND PW = #{pw}
+		   AND STATUS = 1
+	</select>
+	
+	<update id="deleteMember">
+		UPDATE MEMBER
+		   SET STATUS = 0
+		 WHERE ID = #{id}
+		   AND STATUS = 1
+	</update>
+</mapper>
